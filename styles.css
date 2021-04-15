@@ -1,0 +1,55 @@
+@charset "utf-8";
+h1, h3{
+    text-align: center;
+
+}
+
+img{
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    text-align: center;
+    padding: 20px;
+    width: 450px;
+    height: 500px;
+}
+#vot3{
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    text-align: center;
+    padding: 20px;
+}
+a{
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    text-align: center;
+    text-decoration: none;
+    padding: 15px;
+    background-color: red;
+    color: black;
+    width: 25%;
+}
+button{
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    text-align: center;
+    text-decoration: none;
+    padding: 15px;
+    background-color: red;
+    color: black;
+    width: 25%;
+}
+div.flexContainer{
+    display: flex;
+}
+div.item{
+    width: 50%;
+}
+a#runAway{
+    display: block;
+    position: absolute;
+    z-index: 2;
+}
