@@ -6,28 +6,41 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Vote For Nixon Here</title>
     <link href="styles.css" rel="stylesheet"/>
-    <script src="button.js"></script>
 </head>
 <body>
     <header>
         <h1>Chose your canidate below!</h1>
         <img src="vote.png" id="vot3" alt="Go Vote Sticker"/>
     </header>
-   <div class="flexContainer">
-       <div class="item">
-           <h3>Richard Nixon</h3>
-           <br>
-           <img src="nix.jpeg" alt="Richard Nixon"/>
-           <br>
-           <a href="nixon.html">Vote For Nixon</a>
-       </div>
-       <div class="item">
-        <h3>George McGoven</h3>
-        <br>
-        <img src="Mcg.jpeg" alt="The other canidate"/>
-        <br>
-        <a id="runAway" href="nixon.html">Vote For Mcgoven</a>
+    <!-- <div class="container">
+		<h1>Click the button</h1>
+		<div id="runaway-container">
+			<button id="runaway">Click me</button>
+		</div>
+    </div> -->
+        <div class="flexContainer" onclick="voteNix(event)">
+        <div class="item">
+            <h3>Richard Nixon</h3>
+            <br>
+            <img src="nix.jpeg" alt="Richard Nixon"/>
+            <br>
+            <a id="ball" href="nixon.html">Vote for Nixon</a>
+        </div>
+        <div class="item">
+            <h3>George McGoven</h3>
+            <br>
+            <img src="Mcg.jpeg" alt="The other canidate"/>
+            <br>
+            <div id="runaway-container">
+                <a href="nixon.html" id="runaway">Vote for McGoven</a>
+            </div>
+        
+
+        <script src="//ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js"></script>
+        <script src="button.js"></script>
+        
+    
+        </div>
     </div>
-   </div>
 </body>
 </html>
