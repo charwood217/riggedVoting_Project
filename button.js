@@ -42,6 +42,16 @@ ball.style.left = ballCoords.left + 'px';
 ball.style.top = ballCoords.top + 'px';
 }
 
+function youSure(){
+	let result = ""
+	confirm("Are you sure you still have time to cancel?")
+	if(result === false){
+		alert("Uh oh that didn't work")
+	}else{
+		alert("congrats you made the right choice")
+	}
+}
+
 
 // function upload()
 // {
