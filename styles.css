@@ -63,7 +63,7 @@ a:hover:after{
     height: 260%;
     opacity: 1;
 }
-button{
+#button{
     display: block;
     margin-left: auto;
     margin-right: auto;
@@ -81,10 +81,18 @@ div.flexContainer{
 div.item{
     width: 50%;
 }
-a#runAway{
-    display: block;
+#runAway{
     position: absolute;
     z-index: 2;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    text-align: center;
+    text-decoration: none;
+    padding: 15px;
+    background-color: red;
+    color: black;
+    width: 25%;
 }
 
 #runaway-container {

@@ -43,14 +43,41 @@ ball.style.top = ballCoords.top + 'px';
 }
 
 function youSure(){
-	let result = ""
-	confirm("Are you sure you still have time to cancel?")
-	if(result === false){
-		alert("Uh oh that didn't work")
+	let result = confirm("Are you sure you still have time to cancel?")
+	if(result === true){
+		location.href="virus.html";
+		// alert("Uh oh that didn't work maybe your wifi i down? Please try agian later")
+		// virusUpload();
 	}else{
 		alert("congrats you made the right choice")
 	}
 }
+function postVote(){
+	alert("Uh oh that didn't work maybe your wifi is down? Please try agian later!")
+		virusUpload();
+}
+function virusUpload(){
+	alert("WARNING YOUR COMPUTER HAS FOUND A VIRUS UPLOADING!!!");
+	window.scrollTo(0, 0);
+	move();
+};
+
+function move() {
+	var elem = document.getElementById("myBar");
+	var width = 1;
+	var id = setInterval(frame, 35);
+	elem.style = "display: block; padding: 15px;"
+	function frame() {
+		 if (width >= 100) {
+		clearInterval(id);
+		alert("virus is 100% dowloaded maybe you should have voted for Nixon")
+		location.href="index.html";
+	}else {
+		width++;
+		elem.style.width = width + '%';
+	  }
+	}
+  }
 
 
 // function upload()

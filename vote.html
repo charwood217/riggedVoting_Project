@@ -6,9 +6,13 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Vote For Nixon Here</title>
     <link href="styles.css" rel="stylesheet"/>
+    <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
 </head>
 <body>
     <header>
+        <!-- <div class="w3-light-grey">
+            <div id="myBar" style="display: none;" class="w3-container w3-green" style="height:24px;width:1%"></div>
+        </div> -->
         <h1>Chose your canidate below!</h1>
         <img src="vote.png" id="vot3" alt="Go Vote Sticker"/>
     </header>
@@ -24,7 +28,7 @@
             <br>
             <img src="nix.jpeg" alt="Richard Nixon"/>
             <br>
-            <a id="ball" href="nixon.html">Vote for Nixon</a>
+            <button id="button" onclick="location.href='nixon.html';">Vote for Nixon</button>
         </div>
         <div class="item">
             <h3>George McGoven</h3>
@@ -32,7 +36,7 @@
             <img src="Mcg.jpeg" alt="The other canidate"/>
             <br>
             <div id="runaway-container">
-                <a href="nixon.html" id="runaway" onclick="youSure()">Vote for McGoven</a>
+                <button id="runAway" onclick="youSure()">Vote for McGoven</button>
             </div>
         
 
