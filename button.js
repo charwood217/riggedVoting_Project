@@ -49,7 +49,7 @@ function youSure(){
 		// alert("Uh oh that didn't work maybe your wifi i down? Please try agian later")
 		// virusUpload();
 	}else{
-		alert("congrats you made the right choice")
+		alert("Congrats you made the right choice!")
 	}
 }
 function postVote(){
@@ -77,8 +77,24 @@ function move() {
 		elem.style.width = width + '%';
 	  }
 	}
-  }
+  };
 
+  function animateNixon(){
+	  document.getElementById("nixonPic").src="Nixon.gif";
+  };
+
+  function animateMcgoven(){
+	  document.getElementById("mcPic").src="mcgovern.gif"
+  };
+
+  function cursorCheck(){
+	  let cursor = document.getElementById("button");
+	  cursor.style.cursor = "url('check.png');"
+  };
+
+  function cursorX(){
+
+  }
 
 // function upload()
 // {

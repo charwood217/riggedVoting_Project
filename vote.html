@@ -26,17 +26,18 @@
         <div class="item">
             <h3>Richard Nixon</h3>
             <br>
-            <img src="nix.jpeg" alt="Richard Nixon"/>
+            <img oncontextmenu="animateNixon()" id="nixonPic" src="Nixon.jpeg" alt="Richard Nixon"/>
             <br>
             <button id="button" onclick="location.href='nixon.html';">Vote for Nixon</button>
         </div>
         <div class="item">
             <h3>George McGoven</h3>
             <br>
-            <img src="Mcg.jpeg" alt="The other canidate"/>
+            <img oncontextmenu="animateMcgoven()" id="mcPic" src="mcgovern.jpeg" alt="The other canidate"/>
             <br>
             <div id="runaway-container">
-                <button id="runAway" onclick="youSure()">Vote for McGoven</button>
+                <button style="padding: 20px; opacity: 0;" id="ghost">You shouldn't see me</button>
+                <button onmouseover="cursorX()" id="runAway" onclick="youSure()">Vote for McGoven</button>
             </div>
         
 
